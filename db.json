@@ -1,0 +1,13 @@
+{
+  "homeOptions": {
+    "dayRecomendation": {
+      "size": "Gigante",
+      "sauce": "sauce1",
+      "flavor": "Quatro Queijos"
+    },
+    "flavors": ["margarita", "calabresa", "Portuguesa", "Quatro Queijos"],
+    "sauces": ["sauce1", "sauce2", "sauce3", "sauce4"],
+    "sizes": ["Gigante", "Grande", "Média", "Pequena", "Brotinho"]
+  },
+  "paymentOptions": []
+}
