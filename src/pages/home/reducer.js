@@ -1,3 +1,8 @@
+import { 
+  HOME_LOAD_HOME_DATA_SUCCESS,
+  HOME_LOAD_HOME_DATA_FAILED
+ } from './types';
+
 const INITIAL_STATE = {
   dayRecomendation:{},
   sizes: [],
@@ -7,9 +12,13 @@ const INITIAL_STATE = {
 
 const homeReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-   case 'SIMPLE_ACTION':
+   case HOME_LOAD_HOME_DATA_SUCCESS:
     return {
-     result: action.payload
+     ...action.payload
+    }
+  case HOME_LOAD_HOME_DATA_FAILED:
+    return {
+      ...action.payload
     }
    default:
     return state
