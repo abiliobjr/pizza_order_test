@@ -8,7 +8,7 @@ import {
 const apiUrl = "http://localhost:3030"
 const getHomeData =  (dispatch) => async event=> {
   
-  await axios.get(apiUrl+'/homeOption')
+  await axios.get(apiUrl+'/homeOptions')
     .then(result => {
       dispatch({type: HOME_LOAD_HOME_DATA_SUCCESS, payload: result.data})
     })
